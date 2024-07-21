@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-color{
+    background-color: rgb(0, 48, 73);
+}
+body{
+    
+    background-color: rgb(0, 48, 73);
+    color: aliceblue;
+}
+.navbar-brand{
+    color: aliceblue;
+    font-size: 2rem;
+}
+.navbar-brand:visited{
+    color: aliceblue;
+}
+.navbar-brand:hover{
+    color: aliceblue;
+}
+.error{
+    color: red;
+    font-size: 3rem;
+}
+
+.card{
+    background-color: rgb(182, 222, 227);
+}
