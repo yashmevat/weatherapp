@@ -1,6 +1,7 @@
 const { name } = require("ejs");
 const express = require("express")
 const axios = require('axios')
+require('dotenv').config();
 const path = require('path')
 const app = express()
 
@@ -19,8 +20,8 @@ app.get('/',(req,res)=>{
 
 app.get('/show',async(req,res)=>{
     const city = req.query.city
-    const apikey='184f08896c88b55a21d1fa530d18288c'
-    const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apikey}`
+    
+    const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.apikey}`
     let weather;
     let error=null;
     try {
