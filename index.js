@@ -21,7 +21,7 @@ app.get('/',(req,res)=>{
 app.get('/show',async(req,res)=>{
     const city = req.query.city
     
-    const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.apikey}`
+    const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=184f08896c88b55a21d1fa530d18288c`
     let weather;
     let error=null;
     try {
